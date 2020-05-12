@@ -57,7 +57,7 @@ const employees = [
     name: "Victoria",
     email: "victoria@apollo18.io",
     image:
-      "https://avatars1.githubusercontent.com/u/54753921?s=400&u=3f9d8dcfb34642fee1108b80085ca7ff8b270009&v=4",
+      "./assets/victoria.jpeg",
     hobbies: ["code", "brat", "design"],
   },
   {

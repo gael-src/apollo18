@@ -81,45 +81,15 @@ const employees = [
 
 // BODY
 const bodyEl = document.querySelector("body");
-bodyEl.style.margin = "0";
-bodyEl.style.padding = "0";
-bodyEl.style.boxSizing = "border-box";
-bodyEl.style.backgroundColor = "#fbd14b";
-bodyEl.style.textAlign = "center";
-bodyEl.style.fontFamily = "arial";
-
-// H1 TITLE
-// bodyEl.style.maxWidth = "100vw";
-// let title = document.createElement("h1");
-// title.classList.add("title");
-// title.innerText = "Apollo 18";
 
 // MAIN DIV
 const mar = document.querySelector(".employees");
-mar.style.minHeight = "80vh";
-// mar.style.maxWidth = "100vw";
-mar.style.color = "#fbd14b";
-mar.style.fontWeight = "bold";
-mar.style.display = "flex";
-mar.style.flexDirection = "column";
-mar.style.justifyContent = "space-evenly";
-mar.style.alignItems = "center";
-mar.style.textAlign = "center";
 
 // FUNCTION
 employees.map((employee) => {
-  // create elements
+  // CARD DIV
   let employeeDiv = document.createElement("div");
   employeeDiv.classList.add("kinder");
-  employeeDiv.style.backgroundColor = "#6a60a9";
-  employeeDiv.style.width = "250px";
-  employeeDiv.style.padding = "2px";
-  employeeDiv.style.margin = "100px";
-  // employeeDiv.style.display = "flex";
-  // employeeDiv.style.flexDirection = "column";
-  // employeeDiv.style.justifyContent = "center";
-  // employeeDiv.style.alignItems = "center";
-  // employeeDiv.style.margin = 'auto';
 
   // IMAGE
   let image = document.createElement("img");
@@ -132,32 +102,18 @@ employees.map((employee) => {
   let paragraph = document.createElement("p");
   paragraph.classList.add("name");
   image.setAttribute("src", employee.image);
-  image.style.width = "100%";
-  image.style.height = "310px";
   paragraph.innerText = employee.name;
-  paragraph.style.fontSize = "22px";
-  paragraph.style.color = "#dedcee";
 
   // MAIL LINK
   let link = document.createElement("a");
   link.classList.add("email");
-  link.setAttribute("href", `mailto: ${employee.email}`);
   link.innerText = employee.email;
-  link.style.color = "#fbd14b";
-  link.style.textDecoration = "none";
-  link.style.fontSize = "16px";
 
   // LIST
   let lists = document.createElement("ul");
   lists.classList.add("hobbies");
-
   employee.hobbies.forEach((hobbie) => {
     lists.innerHTML += `<li>${hobbie}</li>`;
-    lists.style.fontSize = "14px";
-    lists.style.fontWeight = "normal";
-    lists.style.listStyle = "none";
-    lists.style.padding = "0";
-    lists.style.margin = "20px 0 35px 0";
   });
 
   // APPENCHILD

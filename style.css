@@ -67,8 +67,10 @@ img {
 @media screen and (max-width: 600px) {
   #homeH1 {
     position: relative;
+    text-align: center;
+    margin: 100px 0 100px 0;
   }
   .kinder {
-    margin: 20px;
+    margin: 50px 20px;
   }
 }

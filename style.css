@@ -1,3 +1,4 @@
+/* BODY */
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   font-family: arial;
 }
 
+/* TITLE H1 */
 #homeH1 {
   font-size: 50px;
   position: absolute;
@@ -13,6 +15,7 @@ body {
   color: #6a60a9;
 }
 
+/* MAIN DIV */
 .employees {
   display: flex;
   justify-content: space-evenly;
@@ -20,9 +23,9 @@ body {
   flex-wrap: wrap;
   height: 100vh;
   max-width: 100vw;
-  /* display: flex; */
 }
 
+/* CARD DIV */
 .kinder {
   display: flex;
   flex-direction: column;
@@ -35,17 +38,20 @@ body {
   color: #fbd14b;
 }
 
+/* IMAGE */
 img {
   width: 250px;
   height: 250px;
 }
 
+/* NAME P */
 .name {
   font-size: 22px;
   font-weight: bold;
   color: #dedcee;
 }
 
+/* EMAIL A:HREF */
 .email {
   font-size: 16px;
   text-decoration: none;
@@ -56,6 +62,7 @@ img {
   text-decoration: underline;
 }
 
+/* LIST */
 .hobbies {
   font-size: 14px;
   font-weight: normal;
@@ -64,12 +71,15 @@ img {
   margin: 20px 0 35px 0;
 }
 
+/* MEDIA QUERY */
 @media screen and (max-width: 600px) {
+    /* TITLE H1 */
   #homeH1 {
     position: relative;
     text-align: center;
     margin: 100px 0 100px 0;
   }
+  /* CARD DIV */
   .kinder {
     margin: 50px 20px;
   }

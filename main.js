@@ -107,6 +107,7 @@ employees.map((employee) => {
   // MAIL LINK
   let link = document.createElement("a");
   link.classList.add("email");
+  link.setAttribute("href", `mailto: ${employee.email}`);
   link.innerText = employee.email;
 
   // LIST

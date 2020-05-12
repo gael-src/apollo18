@@ -9,7 +9,7 @@ body {
 #homeH1 {
   font-size: 50px;
   position: fixed;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 30px;
   color: #6a60a9;
 }
 
@@ -29,7 +29,7 @@ body {
   min-width: 250px;
   height: 450px;
   padding: 2px;
-  margin: 100px;
+  margin: 250px 100px;
   background-color: #6a60a9;
   color: #fbd14b;
 }
@@ -66,6 +66,8 @@ img {
 @media only screen and (max-width: 600px) {
   .employees {
     flex-direction: column;
-    margin: 0;
+  }
+  .kinder {
+      margin: 20px;
   }
 }

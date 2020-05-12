@@ -73,7 +73,7 @@ img {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
-    /* TITLE H1 */
+  /* TITLE H1 */
   #homeH1 {
     position: relative;
     text-align: center;

@@ -2,29 +2,25 @@ const employees = [
   {
     name: "Vadim",
     email: "vadim@apollo18.io",
-    image:
-      "./assets/vadim.jpeg",
+    image: "./assets/vadim.jpeg",
     hobbies: ["code", "bmw", "work"],
   },
   {
     name: "Mariusz",
     email: "mariusz@apollo18.io",
-    image:
-      "./assets/mariusz.jpeg",
+    image: "./assets/mariusz.jpeg",
     hobbies: ["code", "painting", "design"],
   },
   {
     name: "Niels",
     email: "niels@apollo18.io",
-    image:
-      "./assets/niels.jpeg",
+    image: "./assets/niels.jpeg",
     hobbies: ["code", "music", "master"],
   },
   {
     name: "Pawel",
     email: "pawel@apollo18.io",
-    image:
-      "./assets/pawel.jpeg",
+    image: "./assets/pawel.jpeg",
     hobbies: ["code", "cat", "done"],
   },
   {
@@ -42,8 +38,7 @@ const employees = [
   {
     name: "Michael",
     email: "michael@apollo18.io",
-    image:
-      "./assets/micha.jpeg",
+    image: "./assets/micha.jpeg",
     hobbies: ["code", "vegan", "master"],
   },
   {

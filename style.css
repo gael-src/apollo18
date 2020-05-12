@@ -68,10 +68,6 @@ img {
   #homeH1 {
     position: relative;
   }
-  .employees {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
   .kinder {
     margin: 20px;
   }

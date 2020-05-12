@@ -1,0 +1,15 @@
+#homeH1 {
+  font-size: 50px;
+  position: fixed;
+  margin: 50px 0 0 50px;
+}
+
+.email:hover {
+    text-decoration: underline!important;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .employees {
+        flex-direction: column;
+    }
+} */

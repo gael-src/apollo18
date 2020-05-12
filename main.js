@@ -89,11 +89,11 @@ employees.map((employee) => {
   // IMAGE
   let image = document.createElement("img");
 
-  // INFO DIV
+  // CARD DIV
   let info = document.createElement("div");
   info.classList.add("info");
 
-  // NAME
+  // NAME P
   let paragraph = document.createElement("p");
   paragraph.classList.add("name");
   image.setAttribute("src", employee.image);

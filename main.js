@@ -56,8 +56,7 @@ const employees = [
   {
     name: "Victoria",
     email: "victoria@apollo18.io",
-    image:
-      "./assets/victoria.jpeg",
+    image: "./assets/victoria.jpeg",
     hobbies: ["code", "brat", "design"],
   },
   {
@@ -74,49 +73,41 @@ const employees = [
   },
 ];
 
-// BODY
-const bodyEl = document.querySelector("body");
-
-// MAIN DIV
-const mar = document.querySelector(".employees");
-
-// FUNCTION
-employees.map((employee) => {
-  // CARD DIV
+let employeesContainer = document.querySelector(".employees");
+// LOOP FUNCTION
+for (empObject of employees) {
+  // MAIN DIV
   let employeeDiv = document.createElement("div");
-  employeeDiv.classList.add("kinder");
+  employeeDiv.classList.add("employee");
+  employeesContainer.appendChild(employeeDiv);
 
   // IMAGE
   let image = document.createElement("img");
+  image.classList.add("image");
+  image.setAttribute("src", empObject.image);
+  employeesContainer.appendChild(image);
 
-  // CARD DIV
-  let info = document.createElement("div");
-  info.classList.add("info");
-
-  // NAME P
-  let paragraph = document.createElement("p");
-  paragraph.classList.add("name");
-  image.setAttribute("src", employee.image);
-  paragraph.innerText = employee.name;
+  // NAME
+  let nameHeader = document.createElement("h2");
+  nameHeader.classList.add("name");
+  nameHeader.innerText = empObject.name;
+  employeeDiv.appendChild(nameHeader);
 
   // MAIL LINK
-  let link = document.createElement("a");
-  link.classList.add("email");
-  link.setAttribute("href", `mailto: ${employee.email}`);
-  link.innerText = employee.email;
+  let nameEmail = document.createElement("a");
+  nameEmail.classList.add("email");
+  nameEmail.setAttribute("href", `mailto: ${empObject.email}`);
+  nameEmail.innerText = empObject.email;
+  employeeDiv.appendChild(nameEmail);
 
   // LIST
-  let lists = document.createElement("ul");
-  lists.classList.add("hobbies");
-  employee.hobbies.forEach((hobbie) => {
-    lists.innerHTML += `<li>${hobbie}</li>`;
-  });
+  let hobbies = document.createElement("ul");
+  hobbies.classList.add("hobbies");
+  employeeDiv.appendChild(hobbies);
 
-  // APPENCHILD
-  info.appendChild(paragraph);
-  info.appendChild(link);
-  info.appendChild(lists);
-  employeeDiv.appendChild(image);
-  employeeDiv.appendChild(info);
-  mar.appendChild(employeeDiv);
-});
+  // LIST ELEMENT
+  empObject.hobbies.forEach((hobbie) => {
+    hobbies.innerHTML += `<li>${hobbie}</li>`;
+  });
+  
+}

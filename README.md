@@ -1,8 +1,8 @@
-# apollo18
+# Apollo 18
 
 myClassMates
 
-dom-manipulation-exercise
+Dom Manipulation Exercise
 
 https://gael-src.github.io/apollo18/
 

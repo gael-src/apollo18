@@ -1,6 +1,6 @@
 # Apollo 18
 
-myClassMates
+My Classmates
 
 Dom Manipulation Exercise
 

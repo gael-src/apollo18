@@ -7,22 +7,6 @@ body {
   font-family: arial;
 }
 
-/* GAEL-SRC.GITHUB.IO */
-.gael-src-link {
-  color: #0081ff;
-  border: solid 1px #0081ff;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 10px 10px 10px 30px;
-  padding: 5px 10px;
- 
-}
-
-.gael-src-link:hover {
-  color: #0081ff;
-  text-decoration: underline;
-}
-
 /* TITLE H1 */
 #homeH1 {
   font-size: 50px;
@@ -88,11 +72,6 @@ img {
   margin: 20px 0 35px 0;
 }
 
-/* FOOTER */
-.footer-container {
-  padding: 10px;
-}
-
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
   /* TITLE H1 */
@@ -105,4 +84,26 @@ img {
   .kinder {
     margin: 50px 20px;
   }
+}
+
+/* GAEL-SRC.GITHUB.IO */
+.gael-src-link {
+  color: black;
+  border: solid 1px black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.gael-src-link:hover {
+  color: white;
+  background-color: black;
+}
+.gael-src-link-wrapper {
+  min-height: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
